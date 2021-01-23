@@ -35,13 +35,13 @@ def won?(board)
 end
 
 def full?(board)  
- board.none? do |spaces| 
-   if spaces == " " || 
-     spaces == nil 
-     return false 
- end 
- end 
- end 
+  board.none? do |spaces| 
+    if spaces == " " || 
+       spaces == nil 
+        return false 
+    end 
+  end 
+end 
     
     
 def draw?(board)
@@ -63,5 +63,5 @@ end
 def winner(board)
   if won?(board)
    return board[won?(board)[0]]
- end
- end
+  end
+end
